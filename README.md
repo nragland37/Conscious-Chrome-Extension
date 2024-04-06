@@ -1,1 +1,0 @@
-# PickHacks2024
