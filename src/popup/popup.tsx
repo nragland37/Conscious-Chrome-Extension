@@ -4,7 +4,7 @@ import './popup.css'
 import ReactSpeedometer from "react-d3-speedometer";
 const PerspectiveTextBox =({parrah:string})=>{
   return (
-    <div className="w-[87vw] h-screen p-5 text-sm font-semibold  bg-white bg-opacity-60 rounded-lg shadow-2xl">
+    <div className="w-[87vw] h-screen p-5 text-sm font-semibold    rounded-lg ">
       putting  NEW: The Tories have deleted its social media post promoting Britain with a US jet and Canadian car after breaking royal protocol by using an image of the King
       </div>
   );
@@ -172,7 +172,7 @@ const Popup = () => {
   const [tab, settab] = useState("perspective");
 
   return (
-    <div className="  w-[95vw] h-[95vh]  flex flex-col items-center justify-start p-3 rounded-xl shadow-xl m-2 bg-yellow-100 ">
+    <div className="  w-[95vw] h-[95vh]  flex flex-col items-center justify-start p-3 rounded-xl shadow-xl m-2 bg-white ">
       <div className="w-screen text-center text-3xl font-bold mb-2">Conscious</div>
       <div className="flex w-[82vw] items-center justify-center rounded-lg py-2 shadow-3xl bg-black mb-3">
         <div onClick={() => { settab("perspective") }} className={`cursor-pointer text-white text-sm font-semibold mr-2 text-opacity-90 rounded-lg  p-2  ${tab === "perspective" ? "bg-gray-600" : ""}`}>
