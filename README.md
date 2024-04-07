@@ -46,6 +46,18 @@ Built with React JS, Tailwind CSS, and TypeScript, our extension offers a sleek 
 - **GPT-3 & GPT-3.5-Turbo** 
 - **TheNewsAPI**
 
+## Process Flow
+<div align="center">
+  <a href="https://github.com/nragland37/PickHacks2024/tree/main">
+    <img src="https://github.com/nragland37/PickHacks2024/blob/main/public/img/diagram.png" alt="Logo">
+  </a>
+  <p align="center">
+    Analyzing Tweet Reliability and Perspective
+    <br />
+  </p>
+</div>
+
+The process starts with extracting tweet text via the Conscious extension. This text is then processed by GPT-3 Turbo AI to create a search prompt, which is used to query a news API for relevant articles. These articles, along with the original tweet, are analyzed by GPT-4, which assesses reliability, offers different perspectives, and evaluates propaganda levels. The findings are then displayed to the user through the Conscious extension.
 
 ## Getting Started
 
@@ -69,6 +81,11 @@ npm install
 4. Start the development server:
 ```bash
 npm run build
+```
+
+5. Apply for an OpenAI API key [here](https://platform.openai.com/account/api-keys) / create .env file in root directory
+```bash
+OPEN_KEY=[your-openai-api-key]
 ```
 
 ### Chrome (Only)
