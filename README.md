@@ -23,6 +23,16 @@
 
 Our project draws its inspiration from the insightful teachings of **Dr. James Curtis**, Department Chair of the Computer and Information Sciences Department. Dr. Curtis introduced us to the concept of the **"Triad of Disruption"**, a framework that examines the intertwining of digital social engineering, social media, and propaganda/fake news. This triad forms a potent tool for information manipulation and warfare, leveraged by various entities to influence public opinion and destabilize democracies. Recognizing the power of digital platforms in shaping political narratives, our project aims to demystify and counteract the effects of propaganda, particularly in the realm of political propaganda. By doing so, we hope to contribute to a more informed and conscious digital user.
 
+<div align="center">
+  <a href="https://github.com/nragland37/PickHacks2024/tree/main">
+    <img  src="https://i.ibb.co/ypHr9Ff/triad3.png" alt="Triad">
+  </a>
+  <p align="center">
+    The Triad of Disruption
+    <br />
+  </p>
+</div>
+
 > "The triad takes the Digital Social Triangle and expands upon two of its elements, digital social engineering and social media, adding in propaganda/fake news to become a powerful information weapon." - Dr. James Curtis
 
 ## Description 
