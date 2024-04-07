@@ -1,4 +1,5 @@
 const path = require('path');
+const Dotenv = require('dotenv-webpack');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -48,6 +49,9 @@ module.exports = {
         ]
     },
     "plugins": [
+        new Dotenv({
+            path:".env"
+        }),
         new CleanWebpackPlugin({
             cleanStaleWebpackAssets: false
         }),
