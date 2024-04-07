@@ -1,7 +1,9 @@
+
+// Render the floating component onto the container
+
 chrome.runtime.sendMessage('I am loading content script', (response) => {
     console.log(response);
     console.log('I am content script')
-
 })
 
 window.onload = (event) => {
@@ -21,4 +23,5 @@ window.onload = (event) => {
       });
     
 };
+
 
