@@ -2,22 +2,33 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import './popup.css'
 import ReactSpeedometer from "react-d3-speedometer";
-const PerspectiveTextBox =({parrah:string})=>{
+const ReliabilityIndicator=({value}:{value:number})=>{
+    return (
+      <div className="w-[87vw] h-screen p-5  font-bold rounded-lg ">
+     <div className="text-center text-9xl"> {value}</div>
+     <div className="w-[95%] flex justify-end text-lg">out of 10</div>
+    </div>
+    );
+}
+const PerspectiveTextBox =({parrah}:{parrah:string})=>{
+  console.log(parrah);
   return (
-    <div className="w-[87vw] h-screen p-5 text-sm font-semibold    rounded-lg ">
-      putting  NEW: The Tories have deleted its social media post promoting Britain with a US jet and Canadian car after breaking royal protocol by using an image of the King
+    <div className="w-[87vw] h-screen p-5 text-sm font-semibold rounded-lg ">
+        {parrah}
       </div>
   );
 }
-const PropagandaMeter = ({ value: number }) => {
+const PropagandaMeter = ({ value}:{value:number}) => {
+
   return (
     <div className="mt-4">
     <ReactSpeedometer
+    needleColor="black"
     textColor="black"
     width={350}
       labelFontSize="12px"
       paddingVertical={15}
-      value={777}
+      value={1000-value}
       currentValueText="Propaganda Level"
       needleTransitionDuration={2000}
       needleHeightRatio={0.7}
@@ -54,7 +65,7 @@ const PropagandaMeter = ({ value: number }) => {
 }
 const Popup = () => {
   const [text, setText] = useState("");
-  const [jsonresult, setjsonresult] = useState("Open Twitter");
+  const [jsonresult, setjsonresult] = useState({reliability_score : "" , propaganda_rating : "", another_perspective : "" });
   async function getnews(search_prompt) {
     const newskey = "OWo8NodaT48dpueZqh12TzMzDZ02O2IpnZsiSDnS";
     const url = `https://api.thenewsapi.com/v1/news/all?api_token=OWo8NodaT48dpueZqh12TzMzDZ02O2IpnZsiSDnS&search=${encodeURIComponent(search_prompt)}`;
@@ -86,7 +97,8 @@ const Popup = () => {
       model: "gpt-3.5-turbo",
       max_tokens: 1500,
     };
-    console.log("searching prompt");
+    console.log("working key");
+    console.log(process.env.OPEN_KEY);
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
       requestData,
@@ -108,7 +120,8 @@ const Popup = () => {
       messages: [
         {
           role: "system",
-          content: "you are a fake news detector and you also provide another perspective or side of the story so that users get to know both sides , i will provide you with a tweet and give you some news related to it tell me whether the news is fake or not also give me a metric out of 10 to tell me about the reliability format should be in json ,also tell me about the propaganda rating out of 100  just 4 things in the json { reason_for_fake : reason_for_fake , reliability_score : reliability_score , propaganda_rating : propaganda_rating, another_perspective : another_perspective }"
+          // content:"you are a fake news detector and you also provide another perspective or side of the story so that users get to know both sides , i will provide you with a tweet and give you some news related to it tell me whether the news is fake or not also give me a metric out of 10 to tell me about the reliability format should be in json ,also tell me about the propaganda rating out of 100  just 4 things in the json { reason_for_fake : reason_for_fake , reliability_score : reliability_score , propaganda_rating : propaganda_rating, another_perspective : another_perspective }"
+          content: "you are a tweet analyzer , you have to do 3 things , i will provide you with a tweet and give news related to the tweet, you have to tell whether the information is reliable or not rate it out of 10 probably it will be reliable, depending on the intent and tone of the tweet give it a propaganda rating out of 1000 the more the rating the more the tweet is to manipulate other or biased, also provide a fresh another perspective so that the user can have both sides of the story , do everything in json format  {another_perspective : another_perspective , reliability_score : reliability_score , propaganda_rating : propaganda_rating }"
         },
         { role: "user", content: "Tweet " + tweet + " News " + news },
       ],
@@ -134,7 +147,7 @@ const Popup = () => {
     } catch (error) {
       console.log(error);
     }
-
+    console.log(response?.data.choices[0].message.content);
     return response?.data.choices[0].message.content;
 
   }
@@ -142,22 +155,32 @@ const Popup = () => {
     console.log("tweets", tweet);
     // return;
     const prompt = await search_generate(tweet);
+    // it sends the tweet to the chat gpt and gets a prompt to search to get news for a certain situation
     console.log(prompt);
     // const prompt="Biden administration arms sales to Israel Gaza conflict";
     const news = await getnews(prompt);
     console.log("news", news);
     const jsonresp = await fakedetector(news, tweet);
     console.log(jsonresp);
-    // setjsonresult(jsonresp);
+    console.log(typeof(jsonresp));
+    setjsonresult(JSON.parse(jsonresp));
 
   }
+  const [tweettext, settweettext] = useState("");
+
   useEffect(() => {
+    // console.log(process.env.OPEN_KEY);
     // Listen for messages from the extension
     chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
       if (message.action === 'setText') {
         // setText(message.text);
         console.log("putting", message.text);
-        // everything(message.text);
+        const newtest=message.text.replace(/\n/g, '');
+       console.log("in everything",newtest); 
+       everything(newtest);
+      
+        
+        settweettext(newtest)
       }
     });
 
@@ -168,9 +191,10 @@ const Popup = () => {
         chrome.tabs.sendMessage(tab.id, { action: 'getText' });
       }
     });
+    // let mystr="{another_perspective : "It is important to note that fundraising is just one aspect of a political campaign and does not necessarily translate to electoral success. There are various factors that contribute to a candidate's overall campaign strategy and performance.",reliability_score : 5,propaganda_rating : 900}"
   }, []);
   const [tab, settab] = useState("perspective");
-
+  // console.log(object);
   return (
     <div className="  w-[95vw] h-[95vh]  flex flex-col items-center justify-start p-3 rounded-xl shadow-xl m-2 bg-white ">
       <div className="w-screen text-center text-3xl font-bold mb-2">Conscious</div>
@@ -186,10 +210,13 @@ const Popup = () => {
         </div>
       </div>
       {
-        tab=="perspective"&&<PerspectiveTextBox parrah="" />
+        tab=="perspective"&&<PerspectiveTextBox parrah={jsonresult.another_perspective} />
       }
       {
-        tab=="propaganda"&&<PropagandaMeter value={300} />
+        tab=="propaganda"&&<PropagandaMeter value={Number(jsonresult.propaganda_rating)} />
+      }
+      {
+        tab=="reliability"&&<ReliabilityIndicator value={Number(jsonresult.reliability_score)} />
       }
 
       
