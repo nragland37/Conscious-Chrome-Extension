@@ -1,6 +1,12 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+body,html {
     height: 400px;
     width: 400px;
+    background: #000;
+    font-family: 'Montserrat', sans-serif;
+
+    /* border-radius: 10px; */
 }
 
 
