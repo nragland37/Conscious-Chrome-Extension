@@ -177,7 +177,7 @@ const Popup = () => {
         console.log("putting", message.text);
         const newtest=message.text.replace(/\n/g, '');
        console.log("in everything",newtest); 
-       everything(newtest);
+      //  everything(newtest);
       
         
         settweettext(newtest)
@@ -199,16 +199,22 @@ const Popup = () => {
     <div className="  w-[95vw] h-[95vh]  flex flex-col items-center justify-start p-3 rounded-xl shadow-xl m-2 bg-white ">
       <div className="w-screen text-center text-3xl font-bold mb-2">Conscious</div>
       <div className="flex w-[82vw] items-center justify-center rounded-lg py-2 shadow-3xl bg-black mb-3">
-        <div onClick={() => { settab("perspective") }} className={`cursor-pointer text-white text-sm font-semibold mr-2 text-opacity-90 rounded-lg  p-2  ${tab === "perspective" ? "bg-gray-600" : ""}`}>
+        <div onClick={() => { settab("perspective") }} className={`cursor-pointer text-white text-sm font-semibold mr-2 text-opacity-90 rounded-lg modern  p-2  ${tab === "perspective" ? "bg-white bg-opacity-15   " : ""}`}>
           Perspective
         </div>
-        <div onClick={() => { settab("propaganda") }} className={`cursor-pointer text-white text-sm font-semibold mr-2 text-opacity-90 rounded-lg  p-2 ${tab === "propaganda" ? "bg-gray-600" : ""}`}>
+        <div onClick={() => { settab("propaganda") }} className={`cursor-pointer text-white text-sm font-semibold mr-2 text-opacity-90 rounded-lg  p-2 ${tab === "propaganda" ? "bg-white bg-opacity-15  " : ""}`}>
           Propaganda
         </div>
-        <div onClick={() => { settab("reliability") }} className={`cursor-pointer text-white text-sm font-semibold mr-2 text-opacity-90 rounded-lg  p-2 ${tab === "reliability" ? "bg-gray-600" : ""}`}>
+        <div onClick={() => { settab("reliability") }} className={`cursor-pointer text-white text-sm font-semibold mr-2 text-opacity-90 rounded-lg  p-2 ${tab === "reliability" ? "bg-white bg-opacity-15  " : ""}`}>
           Reliability
         </div>
       </div>
+      {jsonresult.another_perspective.length===0&&
+      <div className="loader mt-5">
+    <div className="circle"></div>
+    <div className="circle"></div>
+    {/* <div className="circle"></div> */}
+</div>}
       {
         tab=="perspective"&&<PerspectiveTextBox parrah={jsonresult.another_perspective} />
       }
