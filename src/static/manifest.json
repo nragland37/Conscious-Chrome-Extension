@@ -1,12 +1,12 @@
 {
     "manifest_version": 3,
     "name": "Conscious",
-    "description": "react-boilerplate for chrome extension",
+    "description": "Protect national security and create a conscious online community by combating social media misinformation, propaganda, and digital manipulation.",
     "version": "1.0.0",
     "action" : {
         "default_popup": "popup.html",
         "default_title": "Conscious",
-        "default_icon" : "icon.png"
+        "default_icon" : "favicon-32x32.png"
     },
     "chrome_url_overrides": {
         "newtab": "newTab.html"
@@ -18,9 +18,9 @@
         "identity"
     ],
     "icons": {
-        "16" : "icon.png",
-        "48" : "icon.png",
-        "128" : "icon.png"
+        "16" : "favicon-32x32.png",
+        "48" : "favicon-32x32.png",
+        "128" : "favicon-32x32.png"
     },
     "options_page": "options.html",
     "background": {

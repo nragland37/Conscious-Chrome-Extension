@@ -12,15 +12,18 @@
     "@types/chrome": "^0.0.188",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
+    "autoprefixer": "^10.4.19",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
     "dotenv-webpack": "^8.1.0",
     "html-webpack-plugin": "^5.5.0",
+    "postcss": "^8.4.38",
     "postcss-loader": "^7.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "style-loader": "^3.3.1",
+    "tailwindcss": "^3.4.3",
     "ts-loader": "^9.3.0",
     "typescript": "^4.6.4",
     "webpack": "^5.72.1",
@@ -28,11 +31,9 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.7",
     "axios": "^1.6.8",
-    "postcss": "^8.4.14",
     "react-d3-speedometer": "^2.2.1",
     "react-router-dom": "6.2",
-    "tailwindcss": "^3.0.24"
+    "tailwind": "^4.0.0"
   }
 }

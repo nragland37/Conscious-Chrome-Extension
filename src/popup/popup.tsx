@@ -120,7 +120,8 @@ const Popup = () => {
       messages: [
         {
           role: "system",
-          content: "you are a tweet analyzer , you have to do 3 things , i will provide you with a tweet and give news related to the tweet, you have to tell whether the information is reliable or not rate it out of 10 probably it will be reliable, depending on the intent and tone of the tweet give it a propaganda rating out of 1000 the more the rating the more the tweet is to manipulate other or biased, also provide a fresh another perspective so that the user can have both sides of the story , do it in json format , do not use double quotes only use single quotes {another_perspective : another_perspective , reliability_score : reliability_score , propaganda_rating : propaganda_rating }"
+          // content:"you are a fake news detector and you also provide another perspective or side of the story so that users get to know both sides , i will provide you with a tweet and give you some news related to it tell me whether the news is fake or not also give me a metric out of 10 to tell me about the reliability format should be in json ,also tell me about the propaganda rating out of 100  just 4 things in the json { reason_for_fake : reason_for_fake , reliability_score : reliability_score , propaganda_rating : propaganda_rating, another_perspective : another_perspective }"
+          content: "you are a tweet analyzer , you have to do 3 things , i will provide you with a tweet and give news related to the tweet, you have to tell whether the information is reliable or not rate it out of 10 probably it will be reliable, depending on the intent and tone of the tweet give it a propaganda rating out of 1000 the more the rating the more the tweet is to manipulate other or biased, also provide a fresh another perspective so that the user can have both sides of the story , do everything in json format  {another_perspective : another_perspective , reliability_score : reliability_score , propaganda_rating : propaganda_rating }"
         },
         { role: "user", content: "Tweet " + tweet + " News " + news },
       ],
@@ -147,7 +148,7 @@ const Popup = () => {
       console.log(error);
     }
     console.log(response?.data.choices[0].message.content);
-    return JSON.parse(response?.data.choices[0].message.content);
+    return response?.data.choices[0].message.content;
 
   }
   async function everything(tweet) {
@@ -161,7 +162,8 @@ const Popup = () => {
     console.log("news", news);
     const jsonresp = await fakedetector(news, tweet);
     console.log(jsonresp);
-    setjsonresult(jsonresp);
+    console.log(typeof(jsonresp));
+    setjsonresult(JSON.parse(jsonresp));
 
   }
   const [tweettext, settweettext] = useState("");
@@ -176,6 +178,7 @@ const Popup = () => {
         const newtest=message.text.replace(/\n/g, '');
        console.log("in everything",newtest); 
        everything(newtest);
+      
         
         settweettext(newtest)
       }
