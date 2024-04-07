@@ -1,6 +1,6 @@
-@import 'tailwind/base';
-@import 'tailwind/components';
-@import 'tailwind/utilities';
+@tailwind base;
+@itailwind components;
+@tailwind utilities;
 
 body {
     height: 400px;
