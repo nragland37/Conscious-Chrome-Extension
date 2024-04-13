@@ -105,6 +105,26 @@ OPEN_KEY=[your-openai-api-key]
 
 ![Install in chrome](https://res.cloudinary.com/chat-story/image/upload/v1665128418/automa/chrome_QWxClxFcio_d9pqp8.png)
 
+### Sample
+<br />
+<div align="center ">
+  <a href="https://github.com/nragland37/PickHacks2024/tree/main">
+    <img src="https://github.com/nragland37/PickHacks2024/blob/main/public/img/conscious-perspective.png" alt="perspective" width="70%">
+  </a>
+  <br />
+  <br />
+  <a href="https://github.com/nragland37/PickHacks2024/tree/main">
+    <img src="https://github.com/nragland37/PickHacks2024/blob/main/public/img/conscious-propaganga.png" alt="propaganda" width="70%">
+  </a>
+  <br />
+  <br />
+  <a href="https://github.com/nragland37/PickHacks2024/tree/main">
+    <img src="https://github.com/nragland37/PickHacks2024/blob/main/public/img/conscious-reliability.png" alt="reliability" width="70%">
+  </a>
+  
+</div>
+   <br />
+
 ## Future Plans
 - **Cross-Browser Compatibility:** Extend support to ensure seamless functionality across all major web browsers.
 - **Wider Social Media Integration:** Implement the extension across additional social media platforms to broaden its impact.
