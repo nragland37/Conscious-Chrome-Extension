@@ -177,7 +177,7 @@ const Popup = () => {
         console.log("putting", message.text);
         const newtest=message.text.replace(/\n/g, '');
        console.log("in everything",newtest); 
-      //  everything(newtest);
+       everything(newtest);
       
         
         settweettext(newtest)
