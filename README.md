@@ -23,7 +23,7 @@
 
 # Inspiration
 
-Our project draws its inspiration from the insightful teachings of **Dr. James Curtis**, Department Chair of the Computer and Information Sciences Department. Dr. Curtis introduced us to the concept of the **"Triad of Disruption"**, a framework that examines the intertwining of digital social engineering, social media, and propaganda/fake news. This triad forms a potent tool for information manipulation and warfare, leveraged by various entities to influence public opinion and destabilize democracies. Recognizing the power of digital platforms in shaping political narratives, our project aims to demystify and counteract the effects of propaganda, particularly in the realm of political propaganda. By doing so, we hope to contribute to a more informed and conscious digital user.
+Our project draws its inspiration from the insightful teachings of **Dr. James Curtis**, Department Chair of the Computer and Information Sciences Department at Webster University. Dr. Curtis introduced us to the concept of the **"Triad of Disruption"**, a framework that examines the intertwining of digital social engineering, social media, and propaganda/fake news. This triad forms a potent tool for information manipulation and warfare, leveraged by various entities to influence public opinion and destabilize democracies. Recognizing the power of digital platforms in shaping political narratives, our project aims to demystify and counteract the effects of propaganda, particularly in the realm of political propaganda. By doing so, we hope to contribute to a more informed and conscious digital user.
 
 <div align="center">
   <a href="https://ibb.co/G9zq6Qx">
