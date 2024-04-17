@@ -1,4 +1,5 @@
-![License](https://img.shields.io/badge/license-MIT-blue)
+[![Award](https://img.shields.io/badge/Award-2nd%20Place%20at%20EduCathon-red)](https://educathon.devpost.com/project-gallery)
+[![License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/nragland37/Conscious-Chrome-Extension/blob/main/LICENSE)
 
 <a name="readme-top"></a>
 
