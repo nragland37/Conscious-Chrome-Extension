@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/nragland37/PickHacks2024/tree/main">
-    <img src="https://github.com/nragland37/PickHacks2024/blob/main/public/img/conscious_logo.png" alt="Logo" width="200" height="200">
+    <img src="https://github.com/nragland37/PickHacks2024/blob/main/public/img/conscious_logo.png" alt="Logo" width="250" height="250">
   </a>
    <br />
     <br />
@@ -25,7 +25,7 @@ Our project draws its inspiration from the insightful teachings of **Dr. James C
 
 <div align="center">
   <a href="https://ibb.co/G9zq6Qx">
-<img src="https://i.ibb.co/xYxNkqC/triad3.png" alt="triad3" border="0" />
+<img src="https://github.com/nragland37/PickHacks2024/blob/main/public/img/triad3.png" alt="triad3" border="0" />
 </a>
   <p align="center">
     The Triad of Disruption
@@ -105,21 +105,21 @@ OPEN_KEY=[your-openai-api-key]
 
 ![Install in chrome](https://res.cloudinary.com/chat-story/image/upload/v1665128418/automa/chrome_QWxClxFcio_d9pqp8.png)
 
-### Sample
+## Sample
 <br />
 <div align="center ">
   <a href="https://github.com/nragland37/PickHacks2024/tree/main">
-    <img src="https://github.com/nragland37/PickHacks2024/blob/main/public/img/conscious-perspective.png" alt="perspective" width="70%">
+    <img src="https://github.com/nragland37/PickHacks2024/blob/main/public/img/conscious-perspective.png" alt="perspective">
   </a>
   <br />
   <br />
   <a href="https://github.com/nragland37/PickHacks2024/tree/main">
-    <img src="https://github.com/nragland37/PickHacks2024/blob/main/public/img/conscious-propaganga.png" alt="propaganda" width="70%">
+    <img src="https://github.com/nragland37/PickHacks2024/blob/main/public/img/conscious-propaganga.png" alt="propaganda">
   </a>
   <br />
   <br />
   <a href="https://github.com/nragland37/PickHacks2024/tree/main">
-    <img src="https://github.com/nragland37/PickHacks2024/blob/main/public/img/conscious-reliability.png" alt="reliability" width="70%">
+    <img src="https://github.com/nragland37/PickHacks2024/blob/main/public/img/conscious-reliability.png" alt="reliability">
   </a>
   
 </div>
