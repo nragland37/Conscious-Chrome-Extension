@@ -1,4 +1,5 @@
 [![Award](https://img.shields.io/badge/Award-2nd%20Place%20at%20EduCathon-orange)](https://educathon.devpost.com/project-gallery)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a013b4cccddc4f7b9bb0f26b0c31348a)](https://app.codacy.com/gh/nragland37/Conscious-Chrome-Extension/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/nragland37/Conscious-Chrome-Extension/blob/main/LICENSE)
 
 <a name="readme-top"></a>
