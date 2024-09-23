@@ -91,41 +91,42 @@ Built with React JS, Tailwind CSS, and TypeScript, our extension offers a sleek 
 The process starts with extracting tweet text via the Conscious extension. This text is then processed by GPT-3 Turbo AI to create a search prompt, which is used to query a news API for relevant articles. These articles, along with the original tweet, are analyzed by GPT-4, which assesses reliability, offers different perspectives, and evaluates propaganda levels. The findings are then displayed to the user through the Conscious extension.
 
 ## Getting Started
+To run this project locally, follow these steps:
 
-To run locally, follow these steps:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/nragland37/Conscious-Chrome-Extension.git
+   ```
 
-1. Clone the repository:
-```bash
-git clone https://github.com/nragland37/PickHacks2024.git
-```
+2. **Navigate into the project directory:**
+   ```bash
+   cd Conscious-Chrome-Extension
+   ```
 
-2. Navigate into the project directory:
-```bash
-cd PickHacks2024
-```
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-3. Install dependencies:
-```bash
-npm install
-```
+4. **Build the project:**
+   ```bash
+   npm run build
+   ```
 
-4. Start the development server:
-```bash
-npm run build
-```
+5. **Set up your OpenAI API key:**
+   - Apply for an OpenAI API key [here](https://beta.openai.com/signup/).
+   - Create a `.env` file in the root directory and add your API key:
+     ```plaintext
+     OPEN_KEY=[your-openai-api-key]
+     ```
 
-5. Apply for an OpenAI API key [here](https://platform.openai.com/account/api-keys) / create .env file in root directory
-```bash
-OPEN_KEY=[your-openai-api-key]
-```
-
-### Chrome (Only)
-1. Open chrome and navigate to extensions page using this URL: chrome://extensions.
-2. Enable the "Developer mode".
-3. Click "Load unpacked extension" button, browse the `PickHacks2024/dist` directory and select it.
+6. **Chrome (Only):**
+   - Open Chrome and navigate to the extensions page by visiting `chrome://extensions`.
+   - Enable "Developer mode".
+   - Click "Load unpacked extension" and browse to the `Conscious-Chrome-Extension/dist` directory to select it.
 
 <div align="center">
-  <img src="https://res.cloudinary.com/chat-story/image/upload/v1665128418/automa/chrome_QWxClxFcio_d9pqp8.png" alt="Install in Chrome" width="900">
+  <img src="" alt="Install in Chrome" width="900">
 </div>
 
 ## Future Plans
