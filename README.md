@@ -6,20 +6,18 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/nragland37/PickHacks2024/tree/main">
-    <img src="https://github.com/nragland37/PickHacks2024/blob/main/public/img/conscious_logo.png" alt="Logo" width="250" height="250">
-  </a>
-   <br />
+  <img src="/public/img/conscious_logo.png" alt="Logo" width="200" height="200">
+  <br />
     <br />
-  <p align="center">
-    Protect national security and create a conscious online community by combating social media misinformation, propaganda, and digital manipulation.
+    <p align="center">
+      Protect national security and create a conscious online community by combating social media misinformation, propaganda, and digital manipulation.
     <br />
   </p>
 </div>
 <div align="center">
-<a href="https://youtu.be/I2-JWIZB_KU"> View Demo </a>
+  <img src="/public/img/conscious-demo.gif">
+    <a href="https://youtu.be/I2-JWIZB_KU"> View Demo </a>
 </div>
-<br />
 
 # Inspiration
 
