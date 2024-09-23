@@ -123,10 +123,6 @@ To run this project locally, follow these steps:
    - Enable "Developer mode".
    - Click "Load unpacked extension" and browse to the `Conscious-Chrome-Extension/dist` directory to select it.
 
-<div align="center">
-  <img src="" alt="Install in Chrome" width="900">
-</div>
-
 ## Future Plans
 - **Cross-Browser Compatibility:** Extend support to ensure seamless functionality across all major web browsers.
 - **Wider Social Media Integration:** Implement the extension across additional social media platforms to broaden its impact.
