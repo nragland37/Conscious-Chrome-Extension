@@ -5,7 +5,7 @@
 
 <br />
 <div align="center">
-  <img src="/public/img/conscious_logo.png" alt="Logo" width="20%" height="20%">
+  <img src="/public/img/conscious_logo.png" alt="Logo" width="30%">
   <br />
     <br />
     <p align="center">
