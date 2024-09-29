@@ -3,7 +3,7 @@
 
 <br />
 <div align="center">
-  <img src="/public/img/conscious_logo.png" alt="Logo" width="30%">
+  <img src="https://github.com/nragland37/Conscious-Chrome-Extension/blob/main/public/img/conscious_logo.png" alt="Logo" width="30%">
   <br />
     <br />
     <p align="center">
@@ -14,7 +14,7 @@
 <br />
 <br />
 <div align="center">
-  <img src="/public/img/conscious-demo2.gif" width="90%">
+  <img src="https://github.com/nragland37/Conscious-Chrome-Extension/blob/main/public/img/conscious-demo2.gif" width="90%">
   <br />
     <a href="https://youtu.be/I2-JWIZB_KU"> View Demo </a>
 </div>
@@ -82,9 +82,6 @@ Scores content reliability on a scale from 1 to 10, where 1 indicates low reliab
   <a href="https://github.com/nragland37/Conscious-Chrome-Extension/tree/main">
     <img src="https://github.com/nragland37/Conscious-Chrome-Extension/blob/main/public/img/diagram.png" alt="process flow" width="75%">
   </a>
-  <p align="center">
-    Analyzing Tweet Reliability and Perspective
-  </p>
 </div>
 
 The extension extracts the tweet text and sends it to GPT-3 Turbo AI, which creates a search prompt. This prompt is used to query TheNewsAPI for relevant articles. GPT-4 then analyzes these articles alongside the original tweet to provide a reliability score, different perspectives, and a propaganda rating. The results are displayed directly in the extension for easy access and interaction.
