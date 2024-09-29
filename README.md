@@ -34,11 +34,15 @@ This project is inspired by the teachings of **Dr. James Curtis**, Department Ch
 
 > "The triad takes the Digital Social Triangle and expands upon two of its elements, digital social engineering and social media, adding in propaganda/fake news to become a powerful information weapon." - Dr. James Curtis
 
+<br />
+
 ## Description
 
 Conscious is a tool designed to analyze tweets and provide insights into content reliability, bias, and potential propaganda. It helps users navigate social media with a clearer understanding of the narratives they encounter. Whether it's news, opinions, or discussions, Conscious delivers a more informed, balanced perspective, promoting a healthier digital environment.
 
 By offering diverse viewpoints, Conscious empowers users to critically engage with content and reduce the impact of misinformation. From trending topics to everyday browsing, it equips users to make informed decisions about the information they consume.
+
+<br />
 
 ### Perspective
 Generates an opposing viewpoint using APIs, giving users a broader context for the information presented.
@@ -73,13 +77,7 @@ Scores content reliability on a scale from 1 to 10, where 1 indicates low reliab
 
 <br />
 
-## Framework and APIs
-Our extension is built with React JS, Tailwind CSS, and TypeScript, providing a clean and intuitive interface. It leverages the following APIs for in-depth content analysis:
-
-- **GPT-3 & GPT-3.5-Turbo** 
-- **TheNewsAPI**
-
-## Process Flow
+## How it works
 <div align="center">
   <a href="https://github.com/nragland37/Conscious-Chrome-Extension/tree/main">
     <img src="https://github.com/nragland37/Conscious-Chrome-Extension/blob/main/public/img/diagram.png" alt="process flow" width="75%">
@@ -90,6 +88,16 @@ Our extension is built with React JS, Tailwind CSS, and TypeScript, providing a 
 </div>
 
 The extension extracts the tweet text and sends it to GPT-3 Turbo AI, which creates a search prompt. This prompt is used to query TheNewsAPI for relevant articles. GPT-4 then analyzes these articles alongside the original tweet to provide a reliability score, different perspectives, and a propaganda rating. The results are displayed directly in the extension for easy access and interaction.
+
+<br />
+
+## Tech Stack & APIs
+
+**Frontend:** React JS, Tailwind CSS, TypeScript  
+**Build Tool:** Webpack  
+**Integrated APIs:** GPT-3 & GPT-3.5-Turbo, TheNewsAPI
+
+<br />
 
 ## Getting Started
 To run this project locally, follow these steps:
@@ -125,6 +133,8 @@ To run this project locally, follow these steps:
    - Open Chrome and navigate to the extensions page by visiting `chrome://extensions`.
    - Enable "Developer mode".
    - Click "Load unpacked extension" and browse to the `Conscious-Chrome-Extension/dist` directory to select it.
+
+<br />
 
 ## Future Plans
 - **Cross-Browser Compatibility:** Extend support to ensure seamless functionality across all major web browsers.
