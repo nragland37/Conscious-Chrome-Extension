@@ -11,7 +11,7 @@
 <br />
 
 <div align="center">
-  <img src="https://github.com/nragland37/Conscious-Chrome-Extension/blob/main/public/img/conscious-demo2.gif" width="90%">
+  <img src="https://github.com/nragland37/Conscious-Chrome-Extension/blob/main/public/img/conscious-demo2.gif">
   <br />
     <a href="https://youtu.be/I2-JWIZB_KU"> View Demo </a>
 </div>
