@@ -76,7 +76,7 @@ The extension extracts the tweet text and sends it to GPT-3 Turbo AI, which crea
 
 ## Tech Stack & APIs
 
-**Frontend:** React JS, Tailwind CSS, TypeScript  
+**Frontend:** React, Tailwind CSS, TypeScript  
 **Build Tool:** Webpack  
 **Integrated APIs:** GPT-3 & GPT-3.5-Turbo, TheNewsAPI
 
