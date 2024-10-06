@@ -99,12 +99,13 @@ To run this project locally, follow these steps:
    npm run build
    ```
 
-4. **Set up your OpenAI API key:**
-   - Apply for an OpenAI API key [here](https://beta.openai.com/signup/).
-   - Create a `.env` file in the root directory and add your API key:
-     ```plaintext
-     OPEN_KEY=[your-openai-api-key]
-     ```
+> [!IMPORTANT]
+> 4. **Set up your OpenAI API key:**
+> - Apply for an OpenAI API key [here](https://beta.openai.com/signup/)
+> - Create a `.env` file in the root directory and add your API key:
+> - ```plaintext
+>   OPEN_KEY=[your-openai-api-key]
+>   ```
 
 5. **Chrome (Only):**
    - Open Chrome and navigate to the extensions page by visiting `chrome://extensions`.
