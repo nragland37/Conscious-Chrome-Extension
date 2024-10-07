@@ -88,24 +88,24 @@ To run this project locally, follow these steps:
    git clone https://github.com/nragland37/Conscious-Chrome-Extension.git
    cd Conscious-Chrome-Extension
    ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Build the project:**
-   ```bash
-   npm run build
-   ```
-
+   
 > [!IMPORTANT]
-> 4. **Set up your OpenAI API key:**
+> 2. **Set up your OpenAI API key:**
 > - Apply for an OpenAI API key [here](https://beta.openai.com/signup/)
 > - Create a `.env` file in the root directory and add your API key:
 > - ```plaintext
 >   OPEN_KEY=[your-openai-api-key]
 >   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Build the project:**
+   ```bash
+   npm run build
+   ```
 
 5. **Chrome (Only):**
    - Open Chrome and navigate to the extensions page by visiting `chrome://extensions`.
